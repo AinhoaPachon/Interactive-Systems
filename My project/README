@@ -1,0 +1,7 @@
+For extra funcionalities I added a heart whenever a sheep is hit by a hay. I also implemented the sounds of the hay machine shooting hay, for the sheep getting hit by
+hay, and for when a sheep drops. 
+I also implemented the title screen, so you can start and quit the game by pressing the buttons.
+Finally, I implemented a visual feedback for the player score, where you can see how many sheeps they had rescued and how many sheep had fallen.
+
+I noticed that when a sheep drops, it counts as two sheeps dropping instead of just one. I tried to debug the game to see where the mistake was, but unfortunately
+I have not been able to see where the mistake was.
