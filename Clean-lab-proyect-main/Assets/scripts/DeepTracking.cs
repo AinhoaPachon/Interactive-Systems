@@ -26,6 +26,8 @@ public class DeepTracking : MonoBehaviour
     private Vector2 m_ScreenPosition;
     private Vector3 m_WorldPosition;
 
+    private Rigidbody rb;
+
     void Awake()
     {
 
@@ -34,6 +36,7 @@ public class DeepTracking : MonoBehaviour
     void Start()
     {
         playerDetection = FindObjectOfType<PlayerDetection>();
+        rb = GetComponent<Rigidbody>();
     }
 
     void Update()
@@ -44,7 +47,10 @@ public class DeepTracking : MonoBehaviour
 
         //Debug.Log(m_ScreenPosition.x + "," + m_ScreenPosition.y);
 
+
         UpdateTransform();
+        rb.AddForce(m_WorldPosition);
+
     }
 
     private void UpdateTransform()
