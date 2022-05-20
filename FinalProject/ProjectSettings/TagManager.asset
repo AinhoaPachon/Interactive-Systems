@@ -21,6 +21,10 @@ TagManager:
   - CoreStarElement
   - Reward
   - objectiveTriangle
+  - Fence1
+  - Fence2
+  - GreenButton
+  - RedButton
   layers:
   - Default
   - TransparentFX
