@@ -1,35 +1,22 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class ChangeScenes : MonoBehaviour
 {
-    public GameObject player;
-    static int count = 0;
-
-    // SceneManager.LoadScene("Game");
+    public static bool GreenFlagTriggered;
+    public static bool RedFlagTriggered;
 
     // Start is called before the first frame update
     void Start()
     {
-        
+        GreenFlagTriggered = false;
+        RedFlagTriggered = false;
     }
 
-    // Update is called once per frame
-    void Update()
-    {
-        
+    public static void ChangeScene(){
+        SceneManager.LoadScene("Level 2");
     }
 
-    private void OnTriggerEnter(Collider c)
-    {
-        //Debug.Log("ha entrado al trigger");
-        ////Acciones a realizar cuando se detecta una entrada al Trigger.
-        //if (player.isInIsalnd)
-        //{
-        //    player.trackerOutOfGround();
-
-        //}
-
-    }
 }
