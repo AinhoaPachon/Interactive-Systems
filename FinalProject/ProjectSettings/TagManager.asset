@@ -25,6 +25,8 @@ TagManager:
   - Fence2
   - GreenButton
   - RedButton
+  - GreenFlag
+  - RedFlag
   layers:
   - Default
   - TransparentFX
