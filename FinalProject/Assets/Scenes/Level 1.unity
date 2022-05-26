@@ -1256,8 +1256,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   tracker: {fileID: 466365781}
-  moveRate: 4
-  speed: 1.5
+  moveRate: 10
+  speed: 1
 --- !u!54 &1162722902
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -1399,8 +1399,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   tracker: {fileID: 549412854}
-  moveRate: 4
-  speed: 2
+  moveRate: 10
+  speed: 1
 --- !u!54 &1174369297
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -1761,6 +1761,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: limits2
+      objectReference: {fileID: 0}
+    - target: {fileID: 1151388028547126963, guid: e05df077593822543b9b2fa1a5424b4e,
+        type: 3}
+      propertyPath: m_LocalScale.y
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 1151388028547126963, guid: e05df077593822543b9b2fa1a5424b4e,
         type: 3}
@@ -2399,6 +2404,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: limits1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1151388028547126963, guid: 85fb1156b6fa19242acc9daa2bd1b69f,
+        type: 3}
+      propertyPath: m_LocalScale.y
+      value: 3
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 85fb1156b6fa19242acc9daa2bd1b69f, type: 3}

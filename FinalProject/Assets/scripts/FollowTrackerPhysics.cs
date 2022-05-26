@@ -24,8 +24,9 @@ public class FollowTrackerPhysics : MonoBehaviour
     void FixedUpdate()
     {
         // Create a Vector3 variable, and assign X and Z to feature the horizontal and vertical float variables above
-       
+
         Vector3 pos = Vector3.MoveTowards(transform.position, tracker.transform.position, moveRate);
+        //Vector3 pos = tracker.transform.position;
         Vector3 movement = new Vector3(pos.x - transform.position.x , 0.0f, pos.z - transform.position.z);
 
         rb.AddForce(movement*speed);

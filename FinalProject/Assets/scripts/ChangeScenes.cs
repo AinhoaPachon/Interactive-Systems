@@ -4,6 +4,11 @@ using UnityEngine;
 
 public class ChangeScenes : MonoBehaviour
 {
+    public GameObject player;
+    static int count = 0;
+
+    // SceneManager.LoadScene("Game");
+
     // Start is called before the first frame update
     void Start()
     {
@@ -14,5 +19,17 @@ public class ChangeScenes : MonoBehaviour
     void Update()
     {
         
+    }
+
+    private void OnTriggerEnter(Collider c)
+    {
+        //Debug.Log("ha entrado al trigger");
+        ////Acciones a realizar cuando se detecta una entrada al Trigger.
+        //if (player.isInIsalnd)
+        //{
+        //    player.trackerOutOfGround();
+
+        //}
+
     }
 }
