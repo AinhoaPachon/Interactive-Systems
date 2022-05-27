@@ -6,7 +6,7 @@ public class FollowTracker : MonoBehaviour
 {
     public GameObject tracker; //the tracker 
     public float moveRate;
-    public bool isInIsalnd = true; 
+    public bool isInIsalnd = true;
 
     void Start()
     {
@@ -16,11 +16,11 @@ public class FollowTracker : MonoBehaviour
     void Update()
     {
         //transform.position = Vector3.MoveTowards(transform.position, target.transform.position, moveRate);
+
         if (isInIsalnd)
         {
             transform.position = tracker.transform.position;
         }
-        
     }
 
     public void trackerOutOfGround()
