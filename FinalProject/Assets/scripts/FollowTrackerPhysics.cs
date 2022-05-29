@@ -10,6 +10,8 @@ public class FollowTrackerPhysics : MonoBehaviour
     public float speed;
     public static bool RedPlayerCanMove = true;
     public static bool GreenPlayerCanMove = true;
+    public static bool RedFenceActive = true;
+    public static bool GreenFenceActive = true;
 
 
     private Rigidbody rb;
