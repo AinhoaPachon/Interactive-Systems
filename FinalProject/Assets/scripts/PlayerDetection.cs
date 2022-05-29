@@ -21,10 +21,10 @@ public class PlayerDetection : MonoBehaviour
     void Start()
     {
         positions = new float[4];
-        positions[0] = 0.3f;
-        positions[1] = 0.7f;
-        positions[2] = 0.6f;
-        positions[3] = 0.3f;
+        positions[0] = 0.5f;
+        positions[1] = 0.5f;
+        positions[2] = 0.5f;
+        positions[3] = 0.5f;
  
         if (live)
         {            
