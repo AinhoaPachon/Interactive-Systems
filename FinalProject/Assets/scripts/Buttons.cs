@@ -6,6 +6,7 @@ public class Buttons : MonoBehaviour
 {
     public GameObject fence;
     public GameObject button;
+    public AudioSource audio;
 
     // Start is called before the first frame update
     void Start()
@@ -24,6 +25,7 @@ public class Buttons : MonoBehaviour
         if(other.gameObject.CompareTag(button.tag))
         {
             fence.SetActive(false);
+            audio.Play();
             switch(button.tag)
              {
                 case "GreenButton":

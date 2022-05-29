@@ -5,7 +5,8 @@ using UnityEngine;
 public class TriggerFlag : MonoBehaviour
 {
     public GameObject Flag;
-    public GameObject Tracker; 
+    public GameObject Tracker;
+    public AudioSource audio;
 
      void OnTriggerEnter (Collider other)
      {
@@ -28,6 +29,8 @@ public class TriggerFlag : MonoBehaviour
              }
 
              if(ChangeScenes.GreenFlagTriggered && ChangeScenes.RedFlagTriggered){
+                 audio.Play();
+                 new WaitForSeconds(6);
                  ChangeScenes.ChangeScene();
              }
          }
