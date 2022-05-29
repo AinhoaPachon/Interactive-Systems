@@ -5,6 +5,7 @@ using UnityEngine;
 public class TriggerFlag : MonoBehaviour
 {
     public GameObject Flag;
+    public GameObject Tracker; 
 
      void OnTriggerEnter (Collider other)
      {
@@ -13,10 +14,16 @@ public class TriggerFlag : MonoBehaviour
              switch(Flag.tag)
              {
                 case "GreenFlag":
+                    if(!FollowTrackerPhysics.RedFenceActive){
+                    FollowTrackerPhysics.GreenPlayerCanMove = false;
                     ChangeScenes.GreenFlagTriggered = true;
+                    }
                     break;
                 case "RedFlag":
+                    if(!FollowTrackerPhysics.GreenFenceActive){
+                    FollowTrackerPhysics.RedPlayerCanMove = false;
                     ChangeScenes.RedFlagTriggered = true;
+                    }
                     break;
              }
 

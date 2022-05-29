@@ -1375,6 +1375,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Flag: {fileID: 769046105}
+  Tracker: {fileID: 466365781}
 --- !u!1 &1174369294
 GameObject:
   m_ObjectHideFlags: 0
@@ -1532,6 +1533,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Flag: {fileID: 1435240300}
+  Tracker: {fileID: 549412854}
 --- !u!1001 &1174808930
 PrefabInstance:
   m_ObjectHideFlags: 0
