@@ -27,6 +27,8 @@ TagManager:
   - RedButton
   - GreenFlag
   - RedFlag
+  - RedPlayer
+  - GreenPlayer
   layers:
   - Default
   - TransparentFX

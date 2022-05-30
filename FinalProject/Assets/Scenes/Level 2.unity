@@ -1228,6 +1228,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: RedFlag
       objectReference: {fileID: 0}
+    - target: {fileID: 6265002765419260040, guid: fddc726bb8e134e4ea1f7ed281c30f5c,
+        type: 3}
+      propertyPath: m_TagString
+      value: RedFlag
+      objectReference: {fileID: 0}
     - target: {fileID: 8071200127407928451, guid: fddc726bb8e134e4ea1f7ed281c30f5c,
         type: 3}
       propertyPath: m_RootOrder
@@ -1300,7 +1305,7 @@ PrefabInstance:
     - target: {fileID: 2728183649267723267, guid: 4f6c59dcfffce554d89baeec8f539bdd,
         type: 3}
       propertyPath: m_TagString
-      value: MainCamera
+      value: Untagged
       objectReference: {fileID: 0}
     - target: {fileID: 3222595692325449265, guid: 4f6c59dcfffce554d89baeec8f539bdd,
         type: 3}
@@ -1639,9 +1644,11 @@ GameObject:
   - component: {fileID: 1162722901}
   - component: {fileID: 1162722906}
   - component: {fileID: 1162722907}
+  - component: {fileID: 1162722909}
+  - component: {fileID: 1162722908}
   m_Layer: 0
   m_Name: Red Player
-  m_TagString: Untagged
+  m_TagString: RedPlayer
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1654,7 +1661,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1162722899}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 77.6, y: 0, z: 30.9}
+  m_LocalPosition: {x: 77, y: 0, z: 30}
   m_LocalScale: {x: 2, y: 2, z: 2}
   m_Children: []
   m_Father: {fileID: 1460193378}
@@ -1781,6 +1788,32 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   bridge: {fileID: 920116542}
   button: {fileID: 703471591}
+--- !u!114 &1162722908
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1162722899}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3e0366b533d239945b07b70b952c68ac, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Flag: {fileID: 1528562487}
+--- !u!114 &1162722909
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1162722899}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c3994f24fe25b9049b68f8f7e7688a75, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  initPos: {x: 77, y: 0, z: 30}
 --- !u!1 &1174369294
 GameObject:
   m_ObjectHideFlags: 0
@@ -1797,9 +1830,12 @@ GameObject:
   - component: {fileID: 1174369296}
   - component: {fileID: 1174369301}
   - component: {fileID: 1174369302}
+  - component: {fileID: 1174369303}
+  - component: {fileID: 1174369304}
+  - component: {fileID: 1174369305}
   m_Layer: 0
   m_Name: Green Player
-  m_TagString: Untagged
+  m_TagString: GreenPlayer
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1812,7 +1848,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1174369294}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 21.6, y: 0, z: 76.8}
+  m_LocalPosition: {x: 20, y: 0, z: 75}
   m_LocalScale: {x: 2, y: 2, z: 2}
   m_Children: []
   m_Father: {fileID: 1460193378}
@@ -1939,6 +1975,44 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   bridge: {fileID: 135736913}
   button: {fileID: 1295213007}
+--- !u!114 &1174369303
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1174369294}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0edb8dda5aa6068438766af9bd0b2032, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &1174369304
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1174369294}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c3994f24fe25b9049b68f8f7e7688a75, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  initPos: {x: 20, y: 0, z: 75}
+--- !u!114 &1174369305
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1174369294}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3e0366b533d239945b07b70b952c68ac, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Flag: {fileID: 2109236630}
 --- !u!1001 &1174808930
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -2383,6 +2457,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: GreenFlag
       objectReference: {fileID: 0}
+    - target: {fileID: 945537923313124113, guid: 1c1d2b16dbfea34449ca34a5fffc6ebe,
+        type: 3}
+      propertyPath: m_TagString
+      value: GreenFlag
+      objectReference: {fileID: 0}
     - target: {fileID: 3293562680175567509, guid: 1c1d2b16dbfea34449ca34a5fffc6ebe,
         type: 3}
       propertyPath: m_RootOrder
@@ -2567,6 +2646,12 @@ LightingSettings:
   m_PVRFilteringAtrousPositionSigmaDirect: 0.5
   m_PVRFilteringAtrousPositionSigmaIndirect: 2
   m_PVRFilteringAtrousPositionSigmaAO: 1
+--- !u!1 &1528562487 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 6265002765419260040, guid: fddc726bb8e134e4ea1f7ed281c30f5c,
+    type: 3}
+  m_PrefabInstance: {fileID: 769046104}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1681546032
 GameObject:
   m_ObjectHideFlags: 0
@@ -3645,6 +3730,12 @@ PrefabInstance:
       objectReference: {fileID: 2100000, guid: 5e0c982ff48259d4bb9f3ac0dae89560, type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ac3f35dfd68bd5f4a940da4eb3ffd43b, type: 3}
+--- !u!1 &2109236630 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 945537923313124113, guid: 1c1d2b16dbfea34449ca34a5fffc6ebe,
+    type: 3}
+  m_PrefabInstance: {fileID: 1435240299}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &2115047579 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 100004, guid: 3a0e6d70e96768a43a00963d64e729cb,

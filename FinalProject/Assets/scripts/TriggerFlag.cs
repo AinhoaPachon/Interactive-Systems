@@ -5,7 +5,6 @@ using UnityEngine;
 public class TriggerFlag : MonoBehaviour
 {
     public GameObject Flag;
-    public GameObject Tracker; 
 
      void OnTriggerEnter (Collider other)
      {
@@ -28,7 +27,8 @@ public class TriggerFlag : MonoBehaviour
              }
 
              if(ChangeScenes.GreenFlagTriggered && ChangeScenes.RedFlagTriggered){
-                 ChangeScenes.ChangeScene();
+                ChangeScenes.currentLevel++;
+                ChangeScenes.ChangeScene();
              }
          }
      }

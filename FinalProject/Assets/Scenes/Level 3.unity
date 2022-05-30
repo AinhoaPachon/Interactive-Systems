@@ -992,6 +992,7 @@ GameObject:
   - component: {fileID: 1162722902}
   - component: {fileID: 1162722901}
   - component: {fileID: 1162722906}
+  - component: {fileID: 1162722907}
   m_Layer: 0
   m_Name: Red Player
   m_TagString: Untagged
@@ -1007,7 +1008,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1162722899}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 31.5, y: 0, z: 31.800001}
+  m_LocalPosition: {x: 30, y: 0, z: 30}
   m_LocalScale: {x: 2, y: 2, z: 2}
   m_Children: []
   m_Father: {fileID: 1460193378}
@@ -1120,6 +1121,19 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   fence: {fileID: 0}
   button: {fileID: 0}
+--- !u!114 &1162722907
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1162722899}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c3994f24fe25b9049b68f8f7e7688a75, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  initPos: {x: 30, y: 0, z: 30}
 --- !u!1 &1174369294
 GameObject:
   m_ObjectHideFlags: 0
@@ -1135,6 +1149,7 @@ GameObject:
   - component: {fileID: 1174369297}
   - component: {fileID: 1174369296}
   - component: {fileID: 1174369301}
+  - component: {fileID: 1174369302}
   m_Layer: 0
   m_Name: Green Player
   m_TagString: Untagged
@@ -1150,7 +1165,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1174369294}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 45.2, y: 0, z: 31.2}
+  m_LocalPosition: {x: 45, y: 0, z: 30}
   m_LocalScale: {x: 2, y: 2, z: 2}
   m_Children: []
   m_Father: {fileID: 1460193378}
@@ -1263,6 +1278,19 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   fence: {fileID: 0}
   button: {fileID: 0}
+--- !u!114 &1174369302
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1174369294}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c3994f24fe25b9049b68f8f7e7688a75, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  initPos: {x: 45, y: 0, z: 30}
 --- !u!1001 &1174808930
 PrefabInstance:
   m_ObjectHideFlags: 0
