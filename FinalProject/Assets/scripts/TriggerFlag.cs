@@ -5,8 +5,9 @@ using UnityEngine;
 public class TriggerFlag : MonoBehaviour
 {
     public GameObject Flag;
+    public AudioSource LevelFishedAudio;
 
-     void OnTriggerEnter (Collider other)
+     IEnumerator OnTriggerEnter (Collider other)
      {
          if (other.gameObject.tag == Flag.tag) 
          {
@@ -27,6 +28,8 @@ public class TriggerFlag : MonoBehaviour
              }
 
              if(ChangeScenes.GreenFlagTriggered && ChangeScenes.RedFlagTriggered){
+                LevelFishedAudio.Play();
+                yield return new WaitForSeconds(5);
                 ChangeScenes.currentLevel++;
                 ChangeScenes.ChangeScene();
              }
