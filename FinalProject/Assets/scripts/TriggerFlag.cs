@@ -6,6 +6,7 @@ public class TriggerFlag : MonoBehaviour
 {
     public GameObject Flag;
     public AudioSource LevelFishedAudio;
+    public GameObject Confetti;
 
      IEnumerator OnTriggerEnter (Collider other)
      {
@@ -28,6 +29,7 @@ public class TriggerFlag : MonoBehaviour
              }
 
              if(ChangeScenes.GreenFlagTriggered && ChangeScenes.RedFlagTriggered){
+                Confetti.GetComponent<ParticleSystem>().Play();
                 LevelFishedAudio.Play();
                 yield return new WaitForSeconds(5);
                 ChangeScenes.currentLevel++;
