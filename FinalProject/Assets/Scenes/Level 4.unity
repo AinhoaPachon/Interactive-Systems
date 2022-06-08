@@ -910,6 +910,12 @@ PrefabInstance:
     - {fileID: 6056536772609992180, guid: cd1cb5635f8dbe649adff6525a31cfd3, type: 3}
     - {fileID: 686605942, guid: cd1cb5635f8dbe649adff6525a31cfd3, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: cd1cb5635f8dbe649adff6525a31cfd3, type: 3}
+--- !u!1 &378787780 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 2728183649267723267, guid: 4f6c59dcfffce554d89baeec8f539bdd,
+    type: 3}
+  m_PrefabInstance: {fileID: 1362719729}
+  m_PrefabAsset: {fileID: 0}
 --- !u!4 &453089809 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: e617b8988258f754eb1b02449456d92e,
@@ -1040,7 +1046,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 100000, guid: ac3f35dfd68bd5f4a940da4eb3ffd43b, type: 3}
       propertyPath: m_Name
-      value: Fence Island 1
+      value: Red Fence
       objectReference: {fileID: 0}
     - target: {fileID: 100000, guid: ac3f35dfd68bd5f4a940da4eb3ffd43b, type: 3}
       propertyPath: m_TagString
@@ -1629,8 +1635,8 @@ GameObject:
   - component: {fileID: 1162722903}
   - component: {fileID: 1162722902}
   - component: {fileID: 1162722901}
-  - component: {fileID: 1162722906}
   - component: {fileID: 1162722907}
+  - component: {fileID: 1162722906}
   m_Layer: 0
   m_Name: Red Player
   m_TagString: Untagged
@@ -1754,11 +1760,11 @@ MonoBehaviour:
   m_GameObject: {fileID: 1162722899}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d95482fcfd9b9f440a078cdd3ba18c32, type: 3}
+  m_Script: {fileID: 11500000, guid: 250fcbf098bd5b84389974e511070403, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  fence: {fileID: 0}
-  button: {fileID: 0}
+  fence: {fileID: 523073420}
+  button: {fileID: 1405189833}
 --- !u!114 &1162722907
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1786,8 +1792,8 @@ GameObject:
   - component: {fileID: 1174369298}
   - component: {fileID: 1174369297}
   - component: {fileID: 1174369296}
-  - component: {fileID: 1174369301}
   - component: {fileID: 1174369302}
+  - component: {fileID: 1174369301}
   m_Layer: 0
   m_Name: Green Player
   m_TagString: Untagged
@@ -1911,11 +1917,11 @@ MonoBehaviour:
   m_GameObject: {fileID: 1174369294}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d95482fcfd9b9f440a078cdd3ba18c32, type: 3}
+  m_Script: {fileID: 11500000, guid: 250fcbf098bd5b84389974e511070403, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  fence: {fileID: 0}
-  button: {fileID: 0}
+  fence: {fileID: 1976357229}
+  button: {fileID: 378787780}
 --- !u!114 &1174369302
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2637,6 +2643,12 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 10
   m_CollisionDetection: 0
+--- !u!1 &1405189833 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 2728183649267723267, guid: 4f6c59dcfffce554d89baeec8f539bdd,
+    type: 3}
+  m_PrefabInstance: {fileID: 86240631}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1459150221
 GameObject:
   m_ObjectHideFlags: 0
@@ -3187,11 +3199,16 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 4956484621526105476, guid: 4f6c59dcfffce554d89baeec8f539bdd,
+        type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: e5848c4611c035f4aa0c185fd97b927b, type: 2}
     - target: {fileID: 8367868007485126676, guid: 4f6c59dcfffce554d89baeec8f539bdd,
         type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
-      objectReference: {fileID: 2100000, guid: c2f9c3d3dcc7e6648a24a1445f06915e, type: 2}
+      objectReference: {fileID: 2100000, guid: f98db2a6cdff5104d9d49a1db805c633, type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 4f6c59dcfffce554d89baeec8f539bdd, type: 3}
 --- !u!4 &1939359486 stripped
@@ -3209,7 +3226,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 100000, guid: ac3f35dfd68bd5f4a940da4eb3ffd43b, type: 3}
       propertyPath: m_Name
-      value: Fence Island 2
+      value: Green Fence
       objectReference: {fileID: 0}
     - target: {fileID: 100000, guid: ac3f35dfd68bd5f4a940da4eb3ffd43b, type: 3}
       propertyPath: m_TagString
