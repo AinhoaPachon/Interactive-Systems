@@ -21,7 +21,8 @@ public class ChangeScenes : MonoBehaviour
     }
 
 
-    public static void ChangeScene(){
+    public static void ChangeScene()
+    {
         SceneManager.LoadScene(levels[currentLevel]);
         //restart booleans
         GreenFlagTriggered = false;
@@ -29,7 +30,6 @@ public class ChangeScenes : MonoBehaviour
 
         RedFlagTriggered = false;
         FollowTrackerPhysics.RedPlayerCanMove = true;
-
-        }
+    }
 
 }

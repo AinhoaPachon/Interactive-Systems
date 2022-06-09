@@ -20,11 +20,15 @@ public class PlayerDetection : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        positions = new float[4];
+        positions = new float[8];
         positions[0] = 0.5f;
         positions[1] = 0.5f;
         positions[2] = 0.5f;
         positions[3] = 0.5f;
+        positions[4] = 0.5f;
+        positions[5] = 0.5f;
+        positions[6] = 0.5f;
+        positions[7] = 0.5f;
  
         if (live)
         {            
@@ -45,6 +49,8 @@ public class PlayerDetection : MonoBehaviour
 
             if (Input.GetKeyUp(KeyCode.R)) currentManualMarkId = 0;
             if (Input.GetKeyUp(KeyCode.G)) currentManualMarkId = 1;
+            if (Input.GetKeyUp(KeyCode.B)) currentManualMarkId = 2;
+            if (Input.GetKeyUp(KeyCode.Y)) currentManualMarkId = 3;
             //Manual movements
             MapMovement(currentManualMarkId);
         }

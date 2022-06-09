@@ -11,7 +11,7 @@ public class MergePlayers : MonoBehaviour
     public GameObject redTracker;
     public GameObject greenTracker;
 
-    private float maxDist = 5.0f;
+    private float maxDist = 10.0f;
     private bool isMerged = false;
     
     // Start is called before the first frame update

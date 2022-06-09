@@ -23,7 +23,7 @@ public class DeepTrackingReceiver
 
     public void init()
 	{
-        positions = new float[8];
+        positions = new float[12];
     }
 
 	public void listen()
