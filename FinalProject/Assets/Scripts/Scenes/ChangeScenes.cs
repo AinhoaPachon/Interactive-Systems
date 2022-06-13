@@ -9,7 +9,7 @@ public class ChangeScenes : MonoBehaviour
     public static bool RedFlagTriggered;
 
     public static int currentLevel = 0;
-    public static string[] levels = new string[] { "Level 1", "Level 2", "Level 3", "Level 4" };
+    public static string[] levels = new string[] { "Level 1", "Level 2", "Level 3", "Level 4", "End" };
 
 
     // Start is called before the first frame update
